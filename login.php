@@ -43,7 +43,7 @@
 
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="login-bg.mp4" method="POST">
+    <form class="form-default" action="login_php.php" method="POST">
         
         <div class="login-form">
             <!-- logo-login -->
@@ -66,7 +66,7 @@
             <!-- Forget Password -->
             <a href="#" class="forget">Forget Password</a>
             <!-- Forget Password -->
-            <a href="register.html" class="registration">Registration</a>
+            <a href="register.php" class="registration">Registration</a>
         </div>
     </form>
     <!-- /end login form -->

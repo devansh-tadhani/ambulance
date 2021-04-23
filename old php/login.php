@@ -40,48 +40,32 @@
     <!-- Preloader Start-->
 
 
-<!-- Register -->
-
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="register_php.php" method="POST">
+    <form class="form-default" action="login-bg.mp4" method="POST">
         
         <div class="login-form">
             <!-- logo-login -->
-            <div class="logo-login" >
+            <div class="logo-login">
                 <a href="index.php"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
-            <h2>Registration Here</h2>
-
+            <h2>Login Here</h2>
             <div class="form-input">
-                <label for="name">Full name</label>
-                <input  type="text" name="Name" placeholder="Full name" value="<?php if(isset($_GET['username'])){echo $_GET['username'];}  ?>">
-            </div>
-            <div class="form-input">
-                <label for="name">Email Address</label>
-                <input type="email" name="email" placeholder="Email Address" value="<?php if(isset($_GET['mail'])){echo $_GET['mail'];}  ?>">
+                <label for="name">Email</label>
+                <input  type="email" name="email" placeholder="Email">
             </div>
             <div class="form-input">
                 <label for="name">Password</label>
                 <input type="password" name="password" placeholder="Password">
             </div>
-            <div class="form-input">
-                <label for="name">Confirm Password</label>
-                <input type="password" name="password-repeat" placeholder="Confirm Password">
-            </div>
-            <div class="form-input">
-                <input type="radio" name="radio" value="Patient" style="width: 20px;height:20px;">
-                <label for="name">Patient</label>
-                <div></div>
-                <input type="radio" name="radio" value="Driver" style="width: 20px;height:20px;">
-                <label for="name">Driver</label>
-            </div>
-            <div class="form-input" style="">
-                <input type="submit" name="submit" value="Registration">
+            <div class="form-input pt-30">
+                <input type="submit" name="submit" value="login">
             </div>
             
             <!-- Forget Password -->
-            <a href="login.php" class="registration">login</a>
+            <a href="#" class="forget">Forget Password</a>
+            <!-- Forget Password -->
+            <a href="register.html" class="registration">Registration</a>
         </div>
     </form>
     <!-- /end login form -->
