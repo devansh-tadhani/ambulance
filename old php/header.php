@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -72,20 +69,8 @@ session_start();
                                             </li> -->
                                             <li><a href="contact.html">Contact</a></li>
                                             <!-- Button -->
-                                            <?php 
-                                            
-                                                if(isset($_SESSION['userID']))
-                                                {
-                                                    echo '<li class="button-header margin-left "><a href="logout.php" class="btn">logout</a></li>';
-                                                }
-                                                else
-                                                {
-                                                    echo '<li class="button-header margin-left "><a href="register.php" class="btn">Sign Up</a></li>';
-                                                    echo '<li class="button-header"><a href="login.php" class="btn3">Sign In</a></li>';
-                                                }
-
-                                            ?>
-                                            
+                                            <li class="button-header margin-left "><a href="register.php" class="btn">Sign Up</a></li>
+                                            <li class="button-header"><a href="login.php" class="btn3">Sign In</a></li>
                                         </ul>
                                     </nav>
                                 </div>

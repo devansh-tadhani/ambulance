@@ -40,32 +40,40 @@
     <!-- Preloader Start-->
 
 
+<!-- Register -->
+
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="login_php.php" method="POST">
+    <form class="form-default" action="login-bg.mp4" method="POST">
         
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
                 <a href="index.php"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
-            <h2>Login Here</h2>
+            <h2>Registration Here</h2>
+
             <div class="form-input">
-                <label for="name">Email</label>
-                <input  type="email" name="email" placeholder="Email">
+                <label for="name">Full name</label>
+                <input  type="text" name="name" placeholder="Full name">
+            </div>
+            <div class="form-input">
+                <label for="name">Email Address</label>
+                <input type="email" name="email" placeholder="Email Address">
             </div>
             <div class="form-input">
                 <label for="name">Password</label>
                 <input type="password" name="password" placeholder="Password">
             </div>
-            <div class="form-input pt-30">
-                <input type="submit" name="submit" value="login">
+            <div class="form-input">
+                <label for="name">Confirm Password</label>
+                <input type="password" name="password" placeholder="Confirm Password">
             </div>
-            
+            <div class="form-input pt-30">
+                <input type="submit" name="submit" value="Registration">
+            </div>
             <!-- Forget Password -->
-            <a href="#" class="forget">Forget Password</a>
-            <!-- Forget Password -->
-            <a href="register.php" class="registration">Registration</a>
+            <a href="login.html" class="registration">login</a>
         </div>
     </form>
     <!-- /end login form -->

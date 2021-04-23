@@ -44,22 +44,22 @@
 
 <main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="login-bg.mp4" method="POST">
+    <form class="form-default" action="register_php.php" method="POST">
         
         <div class="login-form">
             <!-- logo-login -->
-            <div class="logo-login">
+            <div class="logo-login" >
                 <a href="index.php"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
             <h2>Registration Here</h2>
 
             <div class="form-input">
                 <label for="name">Full name</label>
-                <input  type="text" name="name" placeholder="Full name">
+                <input  type="text" name="Name" placeholder="Full name" value="<?php if(isset($_GET['username'])){echo $_GET['username'];}  ?>">
             </div>
             <div class="form-input">
                 <label for="name">Email Address</label>
-                <input type="email" name="email" placeholder="Email Address">
+                <input type="email" name="email" placeholder="Email Address" value="<?php if(isset($_GET['mail'])){echo $_GET['mail'];}  ?>">
             </div>
             <div class="form-input">
                 <label for="name">Password</label>
@@ -67,13 +67,21 @@
             </div>
             <div class="form-input">
                 <label for="name">Confirm Password</label>
-                <input type="password" name="password" placeholder="Confirm Password">
+                <input type="password" name="password-repeat" placeholder="Confirm Password">
             </div>
-            <div class="form-input pt-30">
+            <div class="form-input">
+                <input type="radio" name="radio" value="Patient" style="width: 20px;height:20px;">
+                <label for="name">Patient</label>
+                <div></div>
+                <input type="radio" name="radio" value="Driver" style="width: 20px;height:20px;">
+                <label for="name">Driver</label>
+            </div>
+            <div class="form-input" style="">
                 <input type="submit" name="submit" value="Registration">
             </div>
+            
             <!-- Forget Password -->
-            <a href="login.html" class="registration">login</a>
+            <a href="login.php" class="registration">login</a>
         </div>
     </form>
     <!-- /end login form -->
